@@ -1,0 +1,93 @@
+.title-container {
+    
+    .flex(column, center);
+
+    article {
+        max-width:80%;
+        .flex (column, center);
+        @media @phone {
+            max-width:100%;
+        }
+        .home-img { width:80%;
+        }}
+    button {
+        .button(black, 1.8rem);
+        margin-top: 50px;
+        
+    }
+    h2{
+        font-size: 4.8rem;
+        font-weight: 800;
+        margin-top: -500px;
+        color: white;
+        text-align: center;
+
+        @media @phone {
+            margin-top: -300px;
+        }
+    }
+}
+
+
+
+.artists-container {
+    
+        padding-top:40px;
+        align-items:center;
+        
+        margin-top: 300px;
+        .flex(row, center, center);
+
+        @media @phone {
+            .flex(column, center, center);
+        }
+
+        .artist {
+            border-top: 2px solid grey;
+            padding-top: 40px;
+            a{
+                font-size: 2.4rem;
+                text-decoration:none;
+                color: black;
+                padding:20px;
+                text-align: center;
+            }
+            .bio {
+                font-size: 1.2rem;
+                text-align: center;
+                height: 350px;
+                
+
+            }
+            .flex(column, center);
+            width:40%;
+
+            @media @phone {
+                width: 80%;
+            }
+
+            article{
+                width:500px;
+
+                @media @phone {
+                    margin-top: 4%;
+                }
+
+                img {
+                    width:500px;
+                    height: 440px;
+                }
+            }
+        }
+    }
+
+.content {
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+img {
+    &:hover {opacity: 0.5;}
+}
